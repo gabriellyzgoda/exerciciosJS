@@ -1,0 +1,26 @@
+<!-- função que permita contar o número de letras contidas em uma string fornecida pelo usuário. Por exemplo, o usuário informa a string “Beterraba”, e a função retorna o número 4 (há 4 vogais nessa palavra). -->
+<html>
+
+<body>
+    Digite uma palavra: <input type=text id="palavra">
+    <br>
+    <button onclick='calcular();'>Quantas letras têm?:</button>
+    <br>
+    O número de letras é: <p id="resultado"></p>
+
+
+    <script>
+        function calcular() {
+            /*numero1 = document.getElementById("num1").value;
+            numero2 = document.getElementById("num2").value;
+            numero3 = numero1 + numero2;
+            document.getElementById("resultado1").innerHTML = numero3;
+*/
+            palavra1 = document.getElementById("palavra").value;
+            palavra2 = palavra1.length;
+            document.getElementById("resultado").innerHTML = palavra2;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    Base do triângulo: <input type=text id="num1">
+    <br>
+    Altura do triângulo: <input type="text" id="num2">
+    <br>
+    <button onclick='calcular();'>Área do triângulo</button>
+
+    <p id="resultado"></p>
+
+
+    <script>
+        function calcular() {
+            /*numero1 = document.getElementById("num1").value;
+            numero2 = document.getElementById("num2").value;
+            numero3 = numero1 + numero2;
+            document.getElementById("resultado1").innerHTML = numero3;
+*/
+            numero1 = parseFloat(document.getElementById("num1").value);
+            numero2= parseFloat(document.getElementById("num2").value);
+            numero3= (numero1*numero2)/2;
+            document.getElementById("resultado").innerHTML = numero3;
+        }
+    </script>
+</body>
+
+</html>

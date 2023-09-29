@@ -1,0 +1,30 @@
+<!-- 5. Escreva uma função que encontre a área e o perímetro de um círculo, de acordo com o raio fornecido. -->
+<html>
+
+<body>
+    Raio do círculo: <input type=text id="num1">
+    <br>
+    <button onclick='calcular();'>Área e o perímetro do círculo:</button>
+    <br>
+    <br>
+    Área: <p id="resultado"></p>
+    Perímetro: <p id="resultado1"></p>
+
+
+    <script>
+        function calcular() {
+            /*numero1 = document.getElementById("num1").value;
+            numero2 = document.getElementById("num2").value;
+            numero3 = numero1 + numero2;
+            document.getElementById("resultado1").innerHTML = numero3;
+*/
+            numero1 = parseFloat(document.getElementById("num1").value);
+            numero2= 3.14*(numero1*numero1);
+            numero3 = 2*3.14*numero1;
+            document.getElementById("resultado").innerHTML = numero2;
+            document.getElementById("resultado1").innerHTML = numero3;
+        }
+    </script>
+</body>
+
+</html>
