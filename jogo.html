@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+                <style>
+                * {
+                    margin: 10;
+                }
+    
+                .titulo {
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: #994584;
+                    padding: 30px;
+                    border: 1px solid rgb(255, 255, 255);
+                    border-radius: 5px;
+                }
+                body{
+                    background-color: #d8aacd;
+                }
+                main {
+			    padding: 300px 0px;
+			    display: flex;
+			    justify-content: space-around;
+		        }
+                section div {
+			    padding: 50px;
+			    text-align: center;
+			    background-color: #ffffff;
+		        }
+                aside div {
+                padding: 50px;
+			    text-align: center;
+			    background-color: #ffffff;
+                }
+                button{
+                background-color: rgba(160, 148, 148, 0.445);
+                height: 35px;
+                width: 55px;
+                }
+                </style>
+        </head>
+        <body>
+            
+            <div class="titulo">
+                <h1>
+                    <center> Joguinho! </center>
+                </h1>
+            </div>
+        <main>
+            <section>
+                <div>
+                Digite um número: <input type="text" id="entrada">
+                <br>
+                <button id='submit'> Aperte </button>
+                <br>
+                Aposta:
+                <p id="resultado"></p>
+                <p id="sorteado"></p>
+                
+                </div>
+            </section>
+            <aside>
+                <div>
+                Histórico:
+                <div id="saida"></div>
+                <div id="saida2"></div>
+                </div>
+            </aside>
+        </main>
+    <script>
+        const entrada = document.getElementById('entrada');
+        const saida = document.getElementById('saida');
+        const saida2 = document.getElementById('saida2');
+
+        const historico = [];
+        const aleatorio2 = [];
+
+        function gerar() {
+            numero1 = entrada.value;
+            aleatorio = Math.floor(Math.random() * 101)
+            aleatorio2.push(aleatorio);
+
+            if(numero1 == aleatorio){
+                tela = "Parabéns! Você acertou!";
+            } else {
+                tela = "Que pena! Você errou!";
+            }
+            document.getElementById("resultado").innerHTML = tela;
+            document.getElementById("sorteado").innerHTML = aleatorio;
+
+            const value = entrada.value;
+            historico.push(value);
+            saida.innerHTML = historico.join(', ');
+            saida2.innerHTML = aleatorio2.join(', ');
+        }
+            document.getElementById('submit').onclick = gerar;
+    </script>
+    </body>
+</html>

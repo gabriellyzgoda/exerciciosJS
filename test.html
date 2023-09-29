@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Digite o número:</p>
+        <input type="text" id="entrada">
+        <button id="submit">Enviar</button>
+        <div id="saida"></div>
+
+        <script>
+            const entrada = document.getElementById('entrada');
+            const saida = document.getElementById('saida');
+
+            const historico = [];
+
+            function addNumber(){
+                const value = entrada.value;
+                historico.push(value);
+                saida.innerHTML = historico.join(', ');
+            }
+
+            document.getElementById('submit').onclick = addNumber;
+        </script>
+    </body>
+</html>
