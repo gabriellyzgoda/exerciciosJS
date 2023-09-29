@@ -30,7 +30,7 @@ a {
 }
 
 body{
-    background: #9277a3;
+    background: #d0ade6;
 }
 main {
 padding: 300px 0px;
@@ -54,17 +54,20 @@ button{
     height: 15px;
     cursor: pointer;
     transition: background .5s;
+    border: none;
 }
 button:hover{
-    background-color: #791ab1;
+    background-color: #9277a3;
 }
 .box{
-    width: 300px;
-    max-height: 3000px;
-    background: #fff;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    top: 15%;
-    }
+width: 300px;
+max-height: 3000px;
+background: #fff;
+display: block;
+text-align: center;
+justify-content: center;
+position: fixed;
+top: 10%;
+left: 50%;
+transform: translateX(-50%);
+}
