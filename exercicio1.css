@@ -37,6 +37,7 @@ button{
     cursor: pointer;
     transition: background .5s;
     border-radius: 5px;
+    margin: 25%;
 }
 .btn:hover {
     background-color: rgb(195, 151, 236);
@@ -45,15 +46,15 @@ button{
     background-color:#9277a3;
 }
 .container {
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    max-width: 1200px;
-    height: 100vh;
+    max-width: 50vh;
+    height: 50vh;
+    margin-top: 5%;
   }
   
   .box {
-    max-height: 2000px;
+    height: 50vh;
+    width: 50vh;
     background: #fff;
-    margin: 0 auto;
   }
-  
