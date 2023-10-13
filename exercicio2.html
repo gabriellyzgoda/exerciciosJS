@@ -1,25 +1,26 @@
 <html>
+    <head>
+        <title>exercicio 2</title>
+    </head>
 
 <body>
-    Digite o numero 1: <input type=text id="num1">
-    
-    <button onclick='cubo();'>Multiplicar</button>
-
-    <p id="resultado"></p>
-
-
-    <script>
-        function cubo() {
-            /*numero1 = document.getElementById("num1").value;
-            numero2 = document.getElementById("num2").value;
-            numero3 = numero1 + numero2;
-            document.getElementById("resultado1").innerHTML = numero3;
-*/
-            numero1 = parseFloat(document.getElementById("num1").value);
-            numero2= numero1*numero1*numero1;
-            document.getElementById("resultado").innerHTML = numero2;
-        }
-    </script>
+    <header>
+        <nav id="menu-h">
+            <a href='#'>Home</a>
+            <a href='#'>About</a>
+            <a href='#'>Contact us</a>
+          </nav>
+    </header>
+    <link rel="stylesheet" href="exercicio2.css">
+    <div class="container">
+        <div class="box">
+        Digite o numero 1: <input type=text id="num1">
+        <button class="btn" onclick='cubo();'>Multiplicar</button>
+        <br>
+        Esse número elevado a 3 é:<p id="resultado"></p>
+        <script src="exercicio2.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>
