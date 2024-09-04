@@ -1,8 +1,8 @@
 function fatorial() {
     numero1 = parseFloat(document.getElementById("num1").value);
-    fatorial = 1
-    for (let i = 2; i <= n; i++) {
-            resultado *= i;
+    let fatorial = 1
+    for (let i = 1; i <= numero1; i++) {
+        fatorial *= i;
         }
-        document.getElementById("resultado").innerHTML = resultado;
+        document.getElementById("resultado").innerHTML = `Fatorial de ${numero1} é ${fatorial}`;
     }
